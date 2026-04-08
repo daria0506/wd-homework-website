@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: #fff5f8;
+    color: #713e53;
+    line-height: 1.6;
+}
+
+.skip-link {
+    display: block;
+    text-align: center;
+    color: #9e5168;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header {
+    text-align: center;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.header-box {
+    padding: 3.5rem 2rem;
+    background-image: url("images/sticker.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 500px auto;
+}
+
+nav {
+    background-color: #9e5168;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffcbd7;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.hero {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(109, 7, 7, 0.7);
+}
+
+section {
+    padding: 2rem 1rem;
+}
+
+.about-us img {
+    display: block;
+    width: 50%;
+    height: 50%;
+    margin: 1.5rem auto 0 auto;
+    border-radius: 10px;
+}
+
+.specialty-gallery, .awards-gallery, .staff-gallery {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.card, .award-card, .staff-card {
+    display: inline-block;
+    width: 400px;
+    margin: 0.8rem;
+    vertical-align: top;
+    text-align: center;
+}
+
+.card img, .award-card img, .staff-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.about-us, .specialties, .why-us, .about-story, .about-awards, .about-staff, .products, .contact-page {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #74465b;
+    margin-bottom: 1rem;
+}
+
+.about-story img {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 1.5rem auto 0 auto;
+    border-radius: 12px;
+}
+
+.data-page table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem auto;
+    background-color: #efd6e5;
+}
+
+.data-page caption {
+    caption-side: top;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #582c40;
+    margin-bottom: 1rem;
+}
+
+.data-page th, .data-page td {
+    border: 1px solid #cfa8b2;
+    padding: 0.8rem;
+    text-align: center;
+    color: #633449;
+}
+
+.data-page th {
+    background-color: #e9c7d0;
+}
+
+.data-page p {
+    text-align: center;
+    color: #74465b;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-form {
+    background-color: #fffaf7;
+    border: 1px solid #d8b7c1;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.4rem;
+    margin-top: 1rem;
+    color: #74465b;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea, .contact-form select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #cfa8b2;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #74465b;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.contact-form button {
+    margin-top: 1.5rem;
+    background-color: #9e5168;
+    color: #fff0f4;
+    border: none;
+    padding: 0.9rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #8a4559;
+}
