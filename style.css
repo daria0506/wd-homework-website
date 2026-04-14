@@ -128,6 +128,12 @@ section {
     border-radius: 12px;
 }
 
+.data-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
 .data-page table {
     width: 100%;
     border-collapse: collapse;
