@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Artigio Bakery</title>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <nav>
+        <ul>
+             <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Learn about our story</a></li>
+            <li><a href="data.html">Products and services</a></li>
+            <li><a href="contact.html">Get in touch with us</a></li>
+            <li><a href="overview.html">Bakery Overview</a></li>
+            <li><a href="card.html">Business card</a></li>
+            <li><a href="chatbox.html">Chatbox</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+
+
+        </ul>
+    </nav>
+    <section class="hero">
+        <img src="images/background3.jpg" alt="Fresh pastries and croissants at Artigio Bakery">
+        <div class="hero-text">
+            <h1>Our Project Portfolio</h1>
+            <h2>Add and display bakery-related projects</h2>
+        </div>
+    </section>
+    <main>
+       <section class="portfolio-intro">
+            <h2>Bakery Project Portfolio</h2>
+            <p>
+                This page presents small projects related to Artigio Bakery, such as website improvements,
+                seasonal campaigns, product ideas, and visual updates. Visitors can add new project ideas
+                using the form below, and the submitted projects will appear in a table on the same page.
+            </p>
+        </section>
+
+        <section class="portfolio-cards">
+            <article class="portfolio-card">
+                <h3>Website Improvements</h3>
+                <p>Ideas for improving the bakery website, navigation, accessibility, and layout.</p>
+            </article>
+
+            <article class="portfolio-card">
+                <h3>Seasonal Campaigns</h3>
+                <p>Projects for Christmas, Easter, Valentine's Day, or other bakery promotions.</p>
+            </article>
+
+            <article class="portfolio-card">
+                <h3>Product Ideas</h3>
+                <p>New pastry, cake, bread, and dessert concepts that could be added to the bakery menu.</p>
+            </article>
+        </section>
+
+        <section class="portfolio-form-section" id="main-content">
+            <h2>Add a Bakery Project</h2>
+            <p>
+                Use this form to add a new bakery-related project idea. The submitted project
+                will later be displayed in the table below.
+            </p>
+
+            <form id="projectForm" class="contact-form">
+                <fieldset>
+                    <legend>Project information</legend>
+
+                    <label for="projectName">Project name</label>
+                    <input type="text" id="projectName" name="projectName" aria-describedby="projectNameError">
+                    <span id="projectNameError" class="error-message"></span>
+
+                    <label for="projectDescription">Project description</label>
+                    <textarea id="projectDescription" name="projectDescription" rows="4" aria-describedby="projectDescriptionError"></textarea>
+                    <span id="projectDescriptionError" class="error-message"></span>
+
+                    <label for="projectUrl">Project URL</label>
+                    <input type="url" id="projectUrl" name="projectUrl" aria-describedby="projectUrlError">
+                    <span id="projectUrlError" class="error-message"></span>
+
+                    <label for="projectType">Project type</label>
+                    <select id="projectType" name="projectType" aria-describedby="projectTypeError">
+                        <option value="">Choose a project type</option>
+                        <option value="Website improvement">Website improvement</option>
+                        <option value="Seasonal campaign">Seasonal campaign</option>
+                        <option value="Product idea">Product idea</option>
+                        <option value="Visual update">Visual update</option>
+                    </select>
+                    <span id="projectTypeError" class="error-message"></span>
+
+                    <label for="completionDate">Completion date</label>
+                    <input type="date" id="completionDate" name="completionDate" aria-describedby="completionDateError">
+                    <span id="completionDateError" class="error-message"></span>
+
+                    <label for="projectImage">Image thumbnail</label>
+                    <input type="url" id="projectImage" name="projectImage" placeholder="https://example.com/image.jpg" aria-describedby="projectImageError">
+                    <span id="projectImageError" class="error-message"></span>
+
+                    <div class="form-buttons">
+                        <button type="submit">Add project</button>
+                        <button type="reset">Reset form</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <section class="projects-table-section">
+            <h2>Submitted Bakery Projects</h2>
+
+            <div class="table-wrapper">
+                <table id="projectsTable" class="projects-table">
+                    <caption>Bakery projects submitted through the portfolio form</caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Project name</th>
+                            <th scope="col">Project description</th>
+                            <th scope="col">Project URL</th>
+                            <th scope="col">Project type</th>
+                            <th scope="col">Completion date</th>
+                            <th scope="col">Image thumbnail</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="projectsTableBody">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Follow us on <a href="https://www.instagram.com/artiggio">Instagram</a> for the latest news and updates.</p>
+        <p>For additional information, don't hesitate to call us at <a href="tel:+407654321">+40 765 4321</a>.</p>
+        <p> &#169; 2026 Artigio Bakery. All rights reserved.</p>
+    </footer>
+    <script src="portfolio.js"></script>
+</body>
+</html>

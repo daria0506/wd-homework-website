@@ -201,7 +201,7 @@ section {
 
 .contact-form button {
     margin-top: 1.5rem;
-    background-color: #461222;
+    background-color: #980759;
     color: #fff0f4;
     border: none;
     padding: 0.9rem 1.5rem;
@@ -259,17 +259,15 @@ footer {
 /*New Overview Page*/
 
 .overview-layout {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
-    max-width: 1300px;
+    max-width: 1100px;
     margin: 2rem auto;
     padding: 0 1rem;
-    flex-wrap: nowrap;
 }
 
 .overview-layout .products {
-    width: 280px;
     background-color: #fdeaf3;
     border: 1px solid #e7bdd0;
     border-radius: 14px;
@@ -298,27 +296,21 @@ footer {
 }
 
 .specialties .specialty-gallery {
-    display: grid;
-    grid-template-columns: 320px 320px 320px;
+    display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.5rem;
+    flex-wrap: wrap;
     max-width: 1200px;
-    margin-top: 1.5rem;
-    margin-right: auto;
-    margin-bottom: 0;
-    margin-left: auto;
+    margin: 1.5rem auto 0 auto;
 }
 
 .specialties .card {
-    display: block;
-    width: 280px;
-    margin: 0;
+    width: 260px;
     background-color: #fdeaf3;
     border: 1px solid #e7bdd0;
     border-radius: 14px;
-    padding: 1.5rem;
-    font-size: 1.1rem;
-    text-align: center;
+    padding: 1.2rem;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -368,8 +360,138 @@ footer {
         width: 90%;
     }
 
+        .portfolio-card {
+        width: 90%;
+    }
+
     .overview-contact {
         flex-direction: column;
         align-items: center;
     }
+}
+
+/* Homework 3 Updates: New Portfolio Page */
+
+.portfolio-intro {
+    max-width: 1100px;
+    margin: 3rem auto 2rem auto;
+    padding: 2rem;
+    background-color: #f8d2e4;
+    border: 4px solid #C8325F;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.portfolio-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin: 2rem auto 3rem auto;
+}
+
+.portfolio-card {
+    width: 280px;
+    background-color: #f8d2e4;
+    border: 4px solid #C8325F;
+    border-radius: 14px;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.portfolio-card h3 {
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+}
+.portfolio-intro h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.portfolio-intro p {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 950px;
+}
+
+.portfolio-form-section h2 {
+    text-align: center;
+    color: #74384d;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.portfolio-form-section > p {
+    text-align: center;
+    color: #74384d;
+    font-size: 1.2rem;
+    max-width: 900px;
+    margin: 0 auto 2rem auto;
+    line-height: 1.6;
+}
+
+.error-message {
+    color: #500e22;
+    font-weight: bold;
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+.projects-table-section {
+    width: 85%;
+    margin: 70px auto;
+    text-align: center;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 25px;
+}
+
+.projects-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #f7d3e2;
+}
+
+#projectsTable caption {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #7b3b50;
+}
+
+.projects-table th,
+.projects-table td {
+    border: 2px solid #cbb3ba;
+    padding: 16px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.projects-table th {
+    background-color: #a94f6d;
+    color: white;
+    font-weight: bold;
+}
+
+.projects-table td {
+    color: #7b3b50;
+}
+
+.projects-table a {
+    word-break: break-word;
+}
+
+.project-thumbnail {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
 }

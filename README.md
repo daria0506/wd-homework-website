@@ -17,3 +17,10 @@ This website is static. The contact form does not send real data, and the produc
 Homework 2 updates:
 - pages like `overview.html`, `chatbox.html`, `specificity.html`, and `card.html` were added
 - figma authentication interface created ( css in `figma-auth.css` and frame screenshot in `images`)
+
+Homework 3 updates:
+- Added a new portfolio page, `portofolio.html`, with a styled main content area.
+- Added an accessible project form with five different input types.
+- The homepage already includes visual enhancements such as a hero image, product cards, bakery images, and styled content boxes.
+- Implemented JavaScript validation with error messages, reset support, and a confirmation message before adding a project.
+- Added a responsive submitted projects table that displays the validated form data, including project name, description, URL, type, completion date, and image thumbnail.
